@@ -1,0 +1,679 @@
+/* =========================================================
+   RESET / BASE
+   ========================================================= */
+*{ box-sizing:border-box; }
+
+html, body{ 
+  margin:0; 
+  padding:0; 
+}
+
+body, h1, h2, h3, h4, p, figure{ 
+  margin:0; 
+}
+
+img{ 
+  max-width:100%; 
+  height:auto; 
+  display:block; 
+}
+
+a{ 
+  color:inherit; 
+  text-decoration:none; 
+}
+
+:root{
+  --ink:#1d403a;           
+  --cream:#f7f2e9;         
+  --brand:#d68751;         
+  --deep:#163E38;          
+}
+
+body{
+  font-family:"Montserrat",sans-serif;
+  background:var(--cream);
+  color:#111;
+}
+
+.container{ 
+  width:100%; 
+  max-width:1200px; 
+  margin:0 auto; 
+  padding:0 24px; 
+}
+
+.flex{ 
+  display:flex; 
+}
+
+.space-between{ 
+  justify-content:space-between; 
+}
+
+.align-center{ 
+  align-items:center; 
+}
+
+
+
+/* =========================================================
+  NAV
+   ========================================================= */
+.menu{
+  position:relative;
+  background:#fdfbf5;
+  padding:18px 0;
+  z-index:10;
+}
+
+.logo img{ 
+  width:130px; 
+}
+
+.iconsheader{ 
+  gap:24px; 
+}
+
+.icon-img{ 
+  width:30px; 
+  transition:transform .2s; 
+  cursor:pointer; 
+}
+
+.icon-img:hover{ 
+  transform:scale(1.1); 
+}
+
+.barra{ 
+  width:42px; 
+}
+
+.dropdown{ 
+  position:relative; 
+}
+
+.lang-toggle{
+  border:2px solid #000; 
+  background:#fff;
+  font-weight:700; 
+  padding:6px 10px; 
+  line-height:1; 
+  border-radius:6px;
+  cursor:pointer; 
+  transition:transform .2s;
+}
+
+.lang-toggle:hover{ 
+  transform:scale(1.08); 
+}
+
+.lang-menu{
+  display:none; 
+  position:absolute; 
+  top:38px; 
+  right:0; 
+  width:220px;
+  list-style:none; 
+  margin:0; 
+  padding:6px; 
+  background:#fff;
+  border:1px solid rgba(0,0,0,.15); 
+  border-radius:8px;
+  box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+.lang-menu li{ 
+  padding:10px 12px; 
+  font-weight:600; 
+  border-radius:6px; 
+}
+
+.lang-menu li:hover{ 
+  background:#f3f3f3; 
+}
+
+.dropdown:hover .lang-menu,
+.dropdown:focus-within .lang-menu{ 
+  display:block; 
+}
+
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero{
+  position:relative;
+  background:url('../Código/Images/Imagem_de_fundo_hero.png') center/cover no-repeat fixed;
+  color:#f7f2e9;
+}
+
+.hero .overlay{ 
+  position:absolute; 
+  inset:0; 
+  background:rgba(0,0,0,.55); 
+}
+
+.hero-inner{ 
+  position:relative; 
+  z-index:1; 
+  padding:86px 0 40px; 
+  text-align:center; 
+}
+
+.hero-text{ 
+  max-width:1000px; 
+  margin:0 auto; 
+}
+
+.hero h1{
+  font-family:"Libre Caslon Text",serif;
+  font-size:56px; 
+  line-height:1.2; 
+  margin-bottom:16px;
+}
+
+.hero h2{ 
+  font-size:20px; 
+  line-height:1.6; 
+}
+
+.video-wrap{ 
+  max-width:1000px; 
+  margin:24px auto 0; 
+}
+
+.hero-video{
+  width:100%; 
+  aspect-ratio:16/9; 
+  border:none; 
+  border-radius:12px;
+  box-shadow:0 4px 20px rgba(0,0,0,.3);
+}
+
+
+
+/* =========================================================
+   CTA / TOUR
+   ========================================================= */
+
+.cta{ 
+  background:#f7f2e9; 
+  padding:40px 0 0; 
+}
+
+.cta-inner{ 
+  display:flex; 
+  gap:48px; 
+  align-items:flex-start; 
+}
+
+.cta-left{ 
+  max-width:680px; 
+}
+
+.cta-title{
+  font-family:"Libre Caslon Text",serif;
+  font-weight:700; 
+  color:var(--brand);
+  font-size:52px; 
+  line-height:1.15; 
+  margin-bottom:18px;
+}
+
+.cta-text p{ 
+  font-size:18px; 
+  line-height:1.8; 
+  color:var(--ink); 
+  margin:0 0 16px; 
+  font-weight:600; 
+}
+
+.mushroom-top{
+  position:absolute; 
+  right:170px; 
+  width:350px; 
+  top:1000px;
+  z-index:1; 
+  pointer-events:none;
+}
+
+.ticket-card{
+  position:relative; 
+  color:#fff; 
+  background:#2b4b47; 
+  border-radius:14px;
+  padding:22px; 
+  box-shadow:0 10px 30px rgba(0,0,0,.18); 
+  overflow:hidden;
+  margin-top:140px; 
+  z-index:2; 
+  max-width:420px; 
+  margin-left:auto;
+}
+
+.ticket-bg{
+  position: absolute;
+  inset: 0;
+  background: url('../Código/Images/Background_image_body.png') center/cover no-repeat;
+  opacity: .4;
+  z-index: 0;                 
+  pointer-events: none;
+}
+
+.ticket-title{ 
+  font-weight:800; 
+  font-size:28px; 
+  margin:6px 6px 16px; 
+}
+
+.ticket-form{ 
+  display:grid; 
+  gap:12px; 
+}
+
+.ticket-form input,
+.ticket-form select{
+  width: 100%;
+  border: 2px solid rgba(255,255,255,.65);
+  background: #fff;
+  color: #111;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 16px;
+  outline: none;
+  appearance: none;
+}
+
+.ticket-form input:focus,
+.ticket-form select:focus{
+  border-color: #d49a72;
+  box-shadow: 0 0 0 3px rgba(212,154,114,.25);
+}
+
+.ticket-btn{
+  margin-top: 6px;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 18px;
+  font-weight: 800;
+  font-size: 18px;
+  background: #c57a45;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: inset 0 -3px 0 rgba(0,0,0,.15), 0 6px 18px rgba(0,0,0,.18);
+  transition: transform .12s ease, filter .15s ease;
+}
+
+.ticket-btn:hover{ 
+  transform: translateY(-1px); 
+  filter: brightness(1.06); 
+}
+
+.ticket-btn:active{ 
+  transform: translateY(0); 
+  filter: brightness(.96); 
+}
+
+.ticket-card .ticket-title,
+.ticket-card .ticket-form{
+  position: relative;
+  z-index: 1;
+}
+
+.info-band{ 
+  background:var(--cream); 
+  padding:10px 0 60px; 
+}
+
+.info-row{ 
+  display:flex; 
+  justify-content:space-between; 
+  gap:24px; 
+}
+
+.info-item{ 
+  display:flex; 
+  flex-direction:column; 
+  align-items:center; 
+  gap:12px; 
+}
+
+.info-icon{ 
+  width:72px; 
+}
+
+.info-text-box{
+  font-weight:700; 
+  font-size:18px; 
+  color:var(--ink); 
+  background:#fff;
+  border-radius:12px; 
+  padding:14px 18px; 
+  text-align:center; 
+  min-width:260px; 
+  box-shadow:0 2px 8px rgba(0,0,0,.06);
+}
+
+
+
+/* =========================================================
+   DENTRO DA FÁBRICA / CURIOSIDADES
+   ========================================================= */
+
+.block{ 
+  padding:48px 0; 
+}
+
+.factory{ 
+  display:flex; 
+  gap:50px; 
+  align-items:flex-start; 
+}
+
+.factory--reverse{ 
+  flex-direction:row-reverse; 
+}
+
+.factory-media img{
+  width:100%; 
+  max-width:480px; 
+  border-radius:12px; 
+  box-shadow:0 8px 20px rgba(0,0,0,.12);
+  margin-top:70px;
+}
+
+.factory-copy{ 
+  flex:1; 
+  display:flex; 
+  flex-direction:column; 
+  gap:12px; 
+}
+
+.title{
+  font-family:"Libre Caslon Text",serif; 
+  font-weight:700; 
+  font-size:40px; 
+  line-height:1.2; 
+  color:#1c3c36;
+  margin-bottom:8px; 
+  text-align:right;
+}
+
+.title.left{ 
+  text-align:left; 
+}
+
+.card{
+  background:#fff; 
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:12px; 
+  box-shadow:0 4px 14px rgba(0,0,0,.08);
+  padding:14px 18px; 
+  font-size:15px; 
+  line-height:1.55; 
+  text-align:justify; 
+  color:#1a1a1a;
+}
+
+
+
+/* =========================================================
+   REVIEWS TICKER
+   ========================================================= */
+
+.rt-section{
+  --rt-speed:40s; 
+  padding:16px 0 24px; 
+}
+
+.rt-ticker{ 
+  border-block:8px solid var(--brand); 
+  background:linear-gradient(0deg, rgba(214,135,81,.18), rgba(214,135,81,.18)); 
+  overflow:hidden; 
+}
+
+.rt-track{ 
+  display:flex; 
+  gap:16px; 
+  width:max-content; 
+  padding:14px 24px; 
+  animation:rt-scroll var(--rt-speed) linear infinite; 
+}
+
+.rt-item{
+  min-width:360px; 
+  max-width:420px; 
+  background:#fff; 
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:16px; 
+  padding:16px; 
+  color:var(--ink); 
+  box-shadow:0 8px 24px rgba(0,0,0,.08);
+}
+
+.rt-item p{ 
+  margin:0 0 10px; 
+  line-height:1.55; 
+}
+
+.rt-stars{ 
+  letter-spacing:2px; 
+  font-weight:700; 
+  color:var(--ink); 
+}
+
+@keyframes rt-scroll{ 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+
+
+
+/* =========================================================
+   FEEDBACK
+   ========================================================= */
+
+.fb-section{ 
+  position:relative; 
+  background:var(--cream); 
+  padding:40px 0 0; 
+}
+
+.fb-media{
+  position:absolute; 
+  inset:0 auto 0 0; 
+  width:clamp(320px, 36vw, 510px);
+  border-radius:0 14px 14px 0; 
+  overflow:hidden;
+}
+
+.fb-media img{ 
+  width:100%; 
+  height:100%; 
+  object-fit:cover; 
+  object-position:left bottom; 
+}
+
+.fb-content{
+  max-width:1200px; 
+  margin:0 auto; 
+  padding:0 24px;
+  margin-left:clamp(320px, 36vw, 510px);
+}
+
+.fb-title{
+  font-family:"Libre Caslon Text",serif; 
+  font-weight:800; 
+  color:var(--brand);
+  font-size:clamp(28px,3.2vw,40px); 
+  line-height:1.2; 
+  margin:0 0 16px;
+}
+
+.fb-form{ 
+  display:flex; 
+  flex-direction:column; 
+  gap:14px; 
+  padding-bottom:14px; 
+}
+
+.fb-form textarea{
+  width:100%; 
+  min-height:170px; 
+  resize:vertical;
+  border:2px solid rgba(0,0,0,.15); 
+  border-radius:14px; 
+  background:#fff; 
+  color:#1a1a1a;
+  font:16px/1.5 "Montserrat",sans-serif; 
+  padding:16px 18px; 
+  box-shadow:0 6px 18px rgba(0,0,0,.08);
+}
+
+.fb-btn{
+  align-self:flex-end; 
+  background:var(--deep); 
+  color:#fff; 
+  border:none; 
+  border-radius:12px;
+  padding:12px 26px; 
+  font-weight:800; 
+  font-size:20px; 
+  cursor:pointer;
+  box-shadow:inset 0 -3px 0 rgba(0,0,0,.18), 0 8px 24px rgba(0,0,0,.18);
+}
+
+.fb-section{ 
+  margin-bottom:-8px; 
+}
+
+.sr-only{
+  position:absolute !important; 
+  width:1px; 
+  height:1px; 
+  padding:0; 
+  margin:-1px;
+  overflow:hidden; 
+  clip:rect(0,0,0,0); 
+  white-space:nowrap; 
+  border:0;
+}
+
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.site-footer{ 
+  background:var(--deep); 
+  color:#EAF2EE; 
+  padding:18px 0 10px; 
+}
+
+.footer-inner{ 
+  display:flex; 
+  align-items:center; 
+  gap:24px; 
+}
+
+.footer-left img{ 
+  height:120px; 
+  filter:drop-shadow(0 2px 6px rgba(0,0,0,.15)); 
+}
+
+.footer-center{ 
+  margin-left:auto; 
+  margin-right:auto; 
+  display:flex; 
+  gap:28px; 
+}
+
+.footer-col h5{ 
+  margin:0 0 8px; 
+  font-weight:800; 
+  font-size:18px; 
+}
+
+.footer-col ul{ 
+  list-style:none; 
+  padding:0; 
+  margin:0; 
+  display:grid; 
+  gap:6px; 
+}
+
+.footer-col a{ 
+  font-weight:600; 
+  opacity:.95; 
+}
+
+.footer-right{ 
+  display:flex; 
+  align-items:center; 
+  gap:12px; 
+}
+
+.footer-right .social{
+  width:44px; 
+  height:44px; 
+  display:inline-flex; 
+  align-items:center; 
+  justify-content:center;
+  border-radius:10px; 
+  background:rgba(255,255,255,.06);
+}
+
+.footer-right .social img{ 
+  width:60%; 
+  height:60%; 
+  object-fit:contain; 
+}
+
+.footer-bottom{
+  text-align:right; 
+  font-weight:800; 
+  letter-spacing:.3px; 
+  margin-top:6px;
+}
+
+
+
+/* =========================================================
+   ADAPTABILIDADE PARA MEDIA
+   ========================================================= */
+
+@media (max-width:900px){
+  /* hero */
+  .hero h1{ font-size:42px; }
+  .hero h2{ font-size:18px; }
+
+  /* CTA */
+  .cta-inner{ flex-direction:column; }
+  .mushroom-top{ right:8px; width:200px; top:-110px; }
+  .ticket-card{ margin:0 auto; max-width:640px; }
+
+  /* icones */
+  .info-row{ flex-direction:column; align-items:center; gap:28px; }
+  .info-text-box{ width:100%; max-width:520px; }
+
+  /* fábrica */
+  .factory{ flex-direction:column; align-items:center; gap:28px; }
+  .factory-media img{ margin-top:0; max-width:100%; }
+  .title{ text-align:center; }
+  .title.left{ text-align:center; }
+
+  /* ticker */
+  .rt-item{ min-width:80vw; }
+
+  /* feedback */
+  .fb-section{ padding:24px 0 0; }
+  .fb-media{ position:relative; width:100%; height:240px; border-radius:12px; }
+  .fb-content{ margin-left:0; padding:0 24px; }
+  .fb-btn{ align-self:stretch; text-align:center; }
+
+  /* footer */
+  .footer-inner{ flex-direction:column; gap:16px; text-align:center; }
+  .footer-center{ flex-direction:column; gap:14px; }
+  .footer-bottom{ text-align:center; }
+}
