@@ -146,7 +146,7 @@ body{
 
 .hero{
   position:relative;
-  background:url('../root/Images/Imagem_de_fundo_hero.png') center/cover no-repeat fixed;
+  background:url('../Images/Imagem_de_fundo_hero.png') center/cover no-repeat fixed;
   color:#f7f2e9;
 }
 
