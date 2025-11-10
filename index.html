@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <title>NÃM - Visita Guiada</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+
+<body>
+  <!-- ================= NAV ================= -->
+  <nav class="menu">
+    <div class="container flex align-center space-between">
+      <a class="logo" href="#" aria-label="NÃM">
+        <img src="images/nam_logo_header.png" alt="NÃM">
+      </a>
+
+      <div class="iconsheader flex align-center">
+        <div class="dropdown">
+          <button class="lang-toggle" aria-label="Selecionar idioma">PT ˅</button>
+          <ul class="lang-menu" aria-label="Lista de idiomas">
+            <li>Português (PT)</li>
+            <li>English (EN)</li>
+            <li>Español (ES)</li>
+            <li>Italiano (IT)</li>
+            <li>Français (FR)</li>
+            <li>Deutsch (DE)</li>
+          </ul>
+        </div>
+
+        <img src="Images/Icone2_header.png" alt="Perfil" class="icon-img">
+        <img src="Images/Icone1_header.png" alt="Menu" class="icon-img barra">
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="overlay" aria-hidden="true"></div>
+
+    <div class="container hero-inner">
+      <header class="hero-text">
+        <h1>Queres visitar a nossa fábrica?</h1>
+        <h2>“Faz uma visita completa à nossa fábrica e descobre todas as etapas do desenvolvimento de borras de café em cogumelos deliciosos! E como bónus, no final, recebem um kit de cogumelos caseiros”</h2>
+      </header>
+
+      <div class="video-wrap">
+        <video class="hero-video" controls preload="metadata" playsinline>
+          <source src="Images/Nam_video.mp4" type="video/mp4">
+          O seu navegador não suporta vídeo HTML5.
+        </video>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ================= CTA / TOUR ================= -->
+  <section class="cta">
+    <div class="container cta-inner">
+      <div class="cta-left">
+        <h3 class="cta-title">Urban Mushroom Farm Tour</h3>
+
+        <div class="cta-text">
+          <p>Aproveite a oportunidade para descobrir como a economia e a natureza podem caminhar juntas.</p>
+          <p>Descubra o fascinante mundo da agricultura urbana com uma visita guiada de 1 hora à nossa fazenda de cogumelos. Aprenda sobre a história e a missão da Nãm, como cultivamos cogumelos gourmet usando um método totalmente circular e experimente variedades frescas colhidas no local.</p>
+          <p>É uma experiência interativa, educativa e saborosa, projetada para despertar a curiosidade, inspirar a mudança e mostrar que todos podemos fazer parte de um ciclo regenerativo!</p>
+        </div>
+      </div>
+      <img src="Images/Cogumelo_body_topo.png" class="mushroom-top" alt="" aria-hidden="true">
+
+      <aside class="ticket-card">
+        <div class="ticket-bg" aria-hidden="true"></div>
+        <h4 class="ticket-title">Adquire o teu bilhete!</h4>
+
+        <form class="ticket-form" action="#" method="post" autocomplete="on">
+          <label class="input-wrap">
+            <input type="text" name="nome" placeholder="Nome" required>
+          </label>
+          <label class="input-wrap">
+            <input type="email" name="email" placeholder="Email" required>
+          </label>
+          <label class="input-wrap">
+            <input type="tel" name="telefone" placeholder="Nº de telemóvel" inputmode="tel" pattern="[0-9+\s()-]*">
+          </label>
+
+          <label class="input-wrap">
+            <select name="data_visita" required>
+                  <option value="" selected disabled>Escolhe o dia</option>
+                  <option value="2025-09-06">6 de setembro</option>
+                  <option value="2025-09-13">13 de setembro</option>
+                  <option value="2025-09-18">18 de setembro</option>
+                  <option value="2025-09-25">25 de setembro</option>
+            </select>
+          </label>
+
+          <button type="submit" class="ticket-btn">Comprar bilhete</button>
+        </form>
+      </aside>
+    </div>
+
+    <!-- ====== ÍCONES ====== -->
+    <div class="info-band">
+      <div class="container info-row">
+        <div class="info-item">
+          <img src="Images/Icone1_body_esquerda.png" alt="" class="info-icon" aria-hidden="true">
+          <p class="info-text-box">Dias 6, 13, 18, 25 de setembro</p>
+        </div>
+        <div class="info-item">
+          <img src="Images/Icone2_body_meio.png" alt="" class="info-icon" aria-hidden="true">
+          <p class="info-text-box">R. Mal. Gomes da Costa 98, 1685-901 Famões</p>
+        </div>
+        <div class="info-item">
+          <img src="Images/Icone3_body_direita.png" alt="" class="info-icon" aria-hidden="true">
+          <p class="info-text-box">Preço por pessoa: 20,00€</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ================= DENTRO DA FÁBRICA ================= -->
+  <section class="factory block container">
+    <figure class="factory-media">
+      <img src="Images/image2_body.jpg" alt="Interior da fábrica da NÃM">
+    </figure>
+
+    <div class="factory-copy">
+      <h2 class="title">Dentro da fábrica</h2>
+
+      <p class="card">Os colaboradores recolhem borras de café oriundas da Delta Cafés. Depois as equipas preparam sacos onde as borras são misturadas com micélio e outros ingredientes necessários para iniciar o crescimento do fungo.</p>
+
+      <p class="card">Os trabalhadores monitorizam condições ambientais, verificam o progresso dos blocos, fazem registos de lote, controlam qualidade e intervêm se necessário.</p>
+
+      <p class="card">Quando os cogumelos atingem o estágio ideal, a equipa entra em ação para manusear os cogumelos com cuidado de modo a manter qualidade e frescura. Depois seguem para lavagem, embalagem e preparo para distribuição.</p>
+    </div>
+  </section>
+
+  <!-- ================= CURIOSIDADES ================= -->
+  <section class="factory factory--reverse block container">
+    <figure class="factory-media">
+      <img src="Images/image2_body(1).jpg" alt="Cogumelos colhidos">
+    </figure>
+
+    <div class="factory-copy">
+      <h2 class="title left">Curiosidades dos cogumelos</h2>
+
+      <p class="card">Os cogumelos são ricos em ergotionina e glutationa, que ajudam a proteger as células cerebrais e a prevenir doenças como o Alzheimer e o Parkinson.</p>
+
+      <p class="card">A NÃM cultiva sobretudo a espécie Pleurotus ostreatus, de textura suave e carnuda. O sabor é adocicado e aveludado, ótimo salteado, grelhado, em massas ou risottos.</p>
+
+      <p class="card">São ecológicos: crescem em resíduos agrícolas, com muito pouca água, terra e energia. A NÃM mostra como os cogumelos podem unir saúde humana e saúde do planeta.</p>
+    </div>
+  </section>
+
+
+
+  <!-- ================= REVIEWS TICKER ================= -->
+  <section class="rt-section" aria-label="Comentários">
+    <div class="rt-ticker">
+      <div class="rt-track">
+
+        <article class="rt-item">
+          <p>“Equipa jovem super simpática e disponível. Trouxemos um kit para termos cogumelos caseiros a nascer em casa. No fim fizemos degustação de cogumelos frescos deliciosos. Recomendo a miúdos e graúdos.”</p>
+          <div class="rt-stars" aria-label="5 em 5">★★★★★</div>
+        </article>
+
+        <article class="rt-item">
+          <p>“A visita foi muito interessante e completa! Um exemplo extraordinário do que a economia circular é. O guia, Natan, foi muito fixe e ensinou-nos imenso acerca de todo o tipo de cogumelos …”</p>
+          <div class="rt-stars" aria-label="4 em 5">★★★★☆</div>
+        </article>
+
+        <article class="rt-item">
+          <p>“A visita à NÃM é muito interessante e educativa. No entanto, a zona de incubação estava um pouco quente e húmida. Faltava alguma sinalização informativa no percurso. Apesar disso, é uma experiência original e altamente recomendada para quem gosta de sustentabilidade.”</p>
+          <div class="rt-stars" aria-label="3 em 5">★★★☆☆</div>
+        </article>
+
+        <article class="rt-item">
+          <p>“Equipa jovem super simpática e disponível. Trouxemos um kit para termos cogumelos caseiros a nascer em casa. No fim fizemos degustação de cogumelos frescos deliciosos. Recomendo a miúdos e graúdos.”</p>
+          <div class="rt-stars" aria-label="5 em 5">★★★★★</div>
+        </article>
+
+        <article class="rt-item">
+          <p>“A visita foi muito interessante e completa! Um exemplo extraordinário do que a economia circular é. O guia, Natan, foi muito fixe e ensinou-nos imenso acerca de todo o tipo de cogumelos …”</p>
+          <div class="rt-stars" aria-label="4 em 5">★★★★☆</div>
+        </article>
+
+        <article class="rt-item">
+          <p>“A visita à NÃM é muito interessante e educativa. No entanto, a zona de incubação estava um pouco quente e húmida. Faltava alguma sinalização informativa no percurso. Apesar disso, é uma experiência original e altamente recomendada para quem gosta de sustentabilidade.”</p>
+          <div class="rt-stars" aria-label="3 em 5">★★★☆☆</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEEDBACK ================= -->
+  <section class="fb-section" aria-labelledby="fb-title">
+    <figure class="fb-media">
+      <img src="Images/Cogumelo_body_baixo.png" alt="Cogumelos frescos">
+    </figure>
+
+    <div class="fb-content">
+      <h2 id="fb-title" class="fb-title">Já visitou a NÃM? Diga-nos o que achou!</h2>
+
+      <form class="fb-form" action="#" method="post">
+        <label for="fb-comment" class="sr-only">Comentário</label>
+        <textarea id="fb-comment" name="comentario" rows="7" placeholder="Comentário"></textarea>
+        <button type="submit" class="fb-btn">Submeter</button>
+      </form>
+    </div>
+  </section>
+
+
+  
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <div class="footer-left">
+        <img src="Images/logo_footer_esquerda.png" alt="NÃM — From Waste to Taste">
+      </div>
+
+      <div class="footer-center">
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="#">Política de Cookies</a></li>
+            <li><a href="#">Termos e Condições</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Política de Devoluções</a></li>
+            <li><a href="#">Provedoria do Cliente</a></li>
+            <li><a href="#">Termos &amp; Condições</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Apoio ao cliente</h5>
+          <ul>
+            <li><a href="#">Apoio ao cliente</a></li>
+            <li><a href="#">Perguntas frequentes</a></li>
+            <li><a href="#">Acessibilidade digital</a></li>
+            <li><a href="#">Contactos</a></li>
+            <li><a href="#">Dê-nos a sua opinião</a></li>
+            <li><a href="#">Livro de Reclamações</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <a class="social" href="#" aria-label="Facebook"><img src="Images/Icone1_footer.png" alt=""></a>
+        <a class="social" href="#" aria-label="Instagram"><img src="Images/Icone2_footer.png" alt=""></a>
+        <a class="social" href="#" aria-label="YouTube"><img src="Images/Icone3_footer.png" alt=""></a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">© 2025 - NÃM mushroom</div>
+  </footer>
+
+</body>
+</html>
