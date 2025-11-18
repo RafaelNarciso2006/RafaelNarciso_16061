@@ -146,7 +146,7 @@ body{
 
 .hero{
   position:relative;
-  background:url('../Código/Images/Imagem_de_fundo_hero.png') center/cover no-repeat fixed;
+  background:url('Images/Imagem_de_fundo_hero.png') center cover no-repeat fixed;
   color:#f7f2e9;
 }
 
@@ -257,7 +257,7 @@ body{
 .ticket-bg{
   position: absolute;
   inset: 0;
-  background: url('../Código/Images/Background_image_body.png') center/cover no-repeat;
+  background: url('Images/Background_image_body.png') center/cover no-repeat;
   opacity: .4;
   z-index: 0;                 
   pointer-events: none;
